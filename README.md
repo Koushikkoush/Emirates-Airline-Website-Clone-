@@ -26,7 +26,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/emirates-clone.git
+[git clone https://github.com/yourusername/emirates-clone.git](https://github.com/Koushikkoush/Emirates-Airline-Website-Clone-)
 Navigate to the project folder:
 bash
 Copy
