@@ -1,0 +1,1265 @@
+body { /* Styles for the body of the document */
+    font-family: Arial, sans-serif; /* Sets the font for the entire page */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    line-height: 1.6; /* Sets line height for better readability */
+}
+
+.header { /* Styles for the header section */
+    background-color: #333; /* Dark background for the header */
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Padding for spacing */
+}
+
+.header-container { /* Container for header elements */
+    display: flex; /* Flexbox layout for header items */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Maximum width for the header */
+    margin: 0 auto; /* Center the header */
+    padding: 0 20px; /* Padding for spacing */
+}
+
+.logo img { /* Styles for the logo image */
+    height: 40px; /* Sets the height of the logo */
+}
+
+.navigation ul { /* Styles for the navigation list */
+    list-style: none; /* Removes bullet points from the list */
+    display: flex; /* Flexbox layout for navigation items */
+    gap: 20px; /* Space between navigation items */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+}
+
+.navigation a { /* Styles for navigation links */
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Removes underline from links */
+    font-size: 16px; /* Font size for links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navigation a:hover { /* Styles for navigation links on hover */
+    color: #0073e6; /* Change color on hover */
+}
+
+
+
+/* photo du */
+
+.hero {
+    position: relative;
+    height: 400px; /* Adjust based on your needs */
+    background-image: url('img/emirates-premium-economy-seat-w1920x480.jpg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    color: #ffffff;
+}
+
+.hero__title {
+    max-width: 800px;
+    z-index: 2;
+}
+
+.hero__subheading {
+    display: block;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.hero__heading__wrapper {
+    display: block;
+}
+
+.hero__heading {
+    display: block;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.hero__description {
+    display: block;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;
+}
+
+.hero__cta {
+    display: inline-block;
+    background-color: #c60c30; /* Emirates red color */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.hero__cta:hover {
+    background-color: #a30926;
+}
+
+.hero__fly-better-top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.fly-better-logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Add a semi-transparent overlay for better text readability */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Centered two-column layout with smaller images */
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px; /* Reduced width to center content */
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.destination-image {
+    width: 100%;
+    height: 100px; /* Reduced height */
+    overflow: hidden;
+}
+
+.destination-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.destination-card:hover .destination-image img {
+    transform: scale(1.05);
+}
+
+.destination-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.country {
+    display: block;
+    font-size: 6px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.city {
+    font-size: 14px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: Georgia, serif;
+}
+
+.discover-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.discover-link:hover {
+    color: #666;
+}
+
+/* Centered buttons for "More destinations" and "Route map" */
+.destination-buttons {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.more-destinations {
+    padding: 10px 30px;
+    background: white;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.more-destinations:hover {
+    background: #f5f5f5;
+}
+
+.route-map-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.route-map-link::after {
+    content: '→';
+    margin-left: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .destination-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Widget Section Styles */
+.widget { /* Styles for widget sections */
+    height: auto; /* Automatic height */
+    padding: 20px; /* Padding for widget */
+    box-sizing: border-box; /* Includes padding in width/height calculations */
+}
+
+.widget__container { /* Container for widget items */
+    margin: 0 auto; /* Center the widget container */
+    max-width: 1200px; /* Maximum width for the widget */
+}
+
+.widget__tab-wrapper { /* Styles for tabbed widget sections */
+    width: 100%; /* Full width */
+    background-color: white; /* White background */
+    border-radius: 0.3rem; /* Rounded corners */
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.19); /* Shadow effect */
+}
+
+.widget__tab-list { /* Styles for tab list */
+    display: flex; /* Flexbox layout for tabs */
+    justify-content: space-around; /* Space around tabs */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    list-style: none; /* Removes bullet points */
+}
+
+.widget__tab { /* Styles for individual tabs */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text in tabs */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 15px; /* Padding for tabs */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.widget__tab:hover { /* Styles for tabs on hover */
+    background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+.widget__tab--active { /* Styles for active tab */
+    background-color: #e0e0e0; /* Active tab background color */
+}
+
+.widget__tab__link { /* Styles for links in tabs */
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent */
+    display: block; /* Block display for full width */
+    width: 100%; /* Full width */
+}
+
+.widget__tab__content { /* Styles for content in tabs */
+    display: flex; /* Flexbox layout for content */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items */
+}
+
+.widget__tab__icon { /* Styles for tab icons */
+    font-size: 2rem; /* Font size for icons */
+    margin-bottom: 5px; /* Margin below icons */
+}
+
+.widget__tab__label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Panel Styles */
+.widget__panel {
+    display: none;
+    padding: 20px;
+    background-color: #fafafa;
+    border-top: 1px solid #e0e0e0;
+}
+
+.widget__panel.panel-active {
+    display: block;
+}
+
+.widget__heading {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.widget__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.widget__close:hover {
+    color: #000;
+}
+
+/* Search Flight Toggle Styles */
+.search-flight-toggle {
+    margin-top: 20px;
+}
+
+.search-flight-toggle__fieldset {
+    border: none;
+    padding: 0;
+}
+
+.switch-button-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.radio-button {
+    display: flex;
+    align-items: center;
+}
+
+.radio-button__input {
+    display: none;
+}
+
+.radio-button__input:checked + .radio-button__text {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.radio-button__text {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 0.3rem;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+.radio-button__text:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .widget__tab-list {
+        flex-direction: column;
+    }
+    
+
+    .radio-button__text {
+        padding: 10px;
+    }
+}
+
+/* .service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+} */
+
+
+/* General Section Styling */
+.services {
+    padding: 40px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.services__list-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 500px;
+}
+
+.service-card {
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.service-card__image--background {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.service-card__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover .service-card__image {
+    opacity: 0.85;
+}
+
+/* Details Wrapper Styling */
+.service-card__details-wrapper {
+    padding: 20px;
+    background: #fff;
+    position: relative;
+}
+
+/* Text Content Styling */
+.service-card__title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.service-card__description {
+    font-size: 1em;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 1023px) {
+    .services__list-item {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Offer Section Styling */
+.offer-section {
+    position: relative;
+    background-image: url('img/family-on-a-blue-water-slide-in-aquaventure-pb-w1920x480.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.overlay {
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+    padding: 20px;
+    border-radius: 8px;
+    height: 90%;
+    width: 100%;
+}
+
+.overlay h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+}
+
+.overlay button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.overlay button:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container Styling for the Button */
+.featured-destinations__explore__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;  /* Adds margin for spacing */
+}
+
+/* Button Link Styling */
+.cta {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border: 1px solid #000; /* Black border */
+}
+
+/* Specific CTA Types */
+.cta--small {
+    font-size: 0.8em;
+}
+
+.cta--secondary {
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    border: 1px solid #000; /* Black border */
+}
+
+.cta--secondary:hover {
+    background-color: #f2f2f2; /* Light gray background on hover */
+    color: #000; /* Keep text black */
+    border-color: #000; /* Keep border black */
+}
+
+.cta--shrink-to-fit {
+    width: fit-content;
+}
+
+/* Additional Text Styling */
+.js-label {
+    display: inline;
+}
+
+.cta__text {
+    font-size: 0.9em;
+}
+
+.market-promo-item__media {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .market-promo-item__media--full-bleed {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .market-promo-cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .market-promo-item__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .market-promo-item__cta:hover {
+    background-color: #0056b3;
+  }
+  
+  .cta--secondary {
+    color: #333;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+  }
+  
+  .cta--secondary:hover {
+    background-color: #e9ecef;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+
+
+
+
+
+
+
+  /* Container Styling for the Promo Item */
+.market-promo-item__media {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust based on how large you want the section */
+    background-image: url('family-on-a-blue-water-slide-in-aquaventure-pb-w1920x480.jpg'); /* Background image URL */
+    background-size: cover; /* Ensure the background image covers the container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Call to Action (CTA) Button Styling */
+.market-promo-item__cta {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Secondary CTA Button */
+.cta--secondary {
+    background-color: #fff;  /* White background */
+    color: #000;             /* Black text */
+    border: 2px solid #000;  /* Black border */
+}
+
+/* Hover Effect */
+.market-promo-item__cta:hover {
+    background-color: #000;  /* Black background on hover */
+    color: #fff;             /* White text on hover */
+    border-color: #fff;      /* White border on hover */
+}
+
+/* Visually Hidden Text for accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+
+
+/* Container for the Text Block */
+.experience-block__text-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white; /* Light background color */
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px; /* Rounded corners for a soft look */
+}
+
+/* Section Title Styling */
+.experience-block__section-title {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-stretch:extra-expanded;
+    font-family: monospace;
+    letter-spacing: 2px;
+    color:RGB(51, 51, 51); /* Emirates blue or any brand-specific color */
+    font-weight:lighter;
+    margin-bottom: 10px;
+}
+
+/* Main Title Styling */
+.experience-block__title {
+    font-size: 2.5rem;
+    color: RGB(51, 51, 51);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Description Styling */
+.experience-block__description {
+    font-size: 1.1rem;
+    color: RGB(51, 51, 51);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 0.8rem;
+    
+    font-family: monospace;
+    
+}
+
+
+
+
+
+
+
+
+/* General container styling */
+.discover-container {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width: 900px; /* Reduced max-width for smaller layout */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Main feature styling */
+.main-feature {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-feature__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    aspect-ratio: 4 / 3;
+}
+
+.main-feature__text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #333;
+}
+
+.main-feature__category {
+    font-size: 0.8rem;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.main-feature__title {
+    font-size: 1.8rem; /* Reduced font size */
+    color: #222;
+    font-weight: bold;
+    margin: 0;
+}
+
+.main-feature__link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #222;
+    text-decoration: none;
+    border-bottom: 2px solid #c00;
+    font-weight: 500;
+}
+
+/* Cabin features grid */
+.cabin-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.feature-item {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-item__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 2;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.feature-item__text {
+    padding: 10px; /* Reduced padding */
+    text-align: center;
+}
+
+.feature-item__category {
+    font-size: 0.75rem; /* Slightly smaller font size */
+    color: #999;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.feature-item__title {
+    font-size: 1rem; /* Smaller title font size */
+    color: #222;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.feature-item__link {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 2px solid #c00;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+/* About Us Section Styling */
+.about-us-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about-us-section h2 {
+    font-size: 1rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.about-us-section p {
+    font-size: 0.6rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* About Items Container */
+.about-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 150px;
+}
+
+/* Circle Image Styling */
+.about-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Link Styling */
+.about-item a {
+    font-size: 0.6rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-item a:hover {
+    text-decoration: underline;
+}
+
+.about-item:hover {
+    transform: scale(1.05); /* Slightly scales up the entire item */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.about-item img:hover {
+    border-color: #aaa; /* Changes border color on hover */
+    transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #ccc;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    margin-bottom: 12px;
+    margin-left: 40px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 10px;
+    font-size-adjust: initial;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-subscribe,
+.footer-app,
+.footer-social {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-subscribe h3,
+.footer-app h3,
+.footer-social h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-subscribe form,
+.footer-app .app-icons,
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-subscribe input[type="email"] {
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #444;
+    color: #ccc;
+    outline: none;
+}
+
+.footer-subscribe button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #555;
+    color: #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+    background-color: #666;
+}
+
+.app-icons img,
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.featured-destinations-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Adds space between each div */
+    flex-wrap: wrap; /* Ensures content wraps if the screen is too small */
+    gap: 20px; /* Optional: Adds space between items */
+}
+
+.footer-container > div {
+    flex: 1; /* Allows each item to take equal width */
+    min-width: 250px; /* Sets a minimum width to avoid squishing on small screens */
+}
+
+.footer-subscribe,
+.footer-app,
+.footer-social {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.main-feature:hover {
+    transform: scale(1.05); /* Slightly scales up the entire feature */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.main-feature__link:hover {
+    color: #0056b3; /* Changes link color on hover */
+    text-decoration: underline; /* Adds underline to emphasize */
+}
+
+.feature-item:hover {
+    transform: scale(1.05); /* Slightly scales up the entire item */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.feature-item__link:hover {
+    color: #0056b3; /* Changes link color on hover */
+    text-decoration: underline; /* Adds underline to emphasize */
+}
+
+
+
+.product-block-wrapper {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.product-block__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-block__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-block__list-item {
+    flex: 1 1 calc(14.28% - 20px); /* Adjusts for 7 items per row */
+    max-width: 150px;
+}
+
+.product-block__link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-block__link:hover {
+    background-color: #e0e0e0;
+    color: #0056b3;
+}
+
+.product-block__link-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.product-block__external-link {
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+.product-block__expanded {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product-block__expanded-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.product-block__expanded-link:hover {
+    color: #0056b3;
+}
+
+.product-block__arrow-icon {
+    margin-left: 5px;
+}
+
+
+
+
+
+.featured-destinations {
+    font-size: 1rem; /* Adjusts the font size */
+    color: #333; /* Sets text color */
+    text-align: center; /* Centers the text */
+    font-weight: 400; /* Normal weight for general text */
+    padding-top: 6px;
+}
+
+.featured-destinations .highlight {
+    font-weight: bold; /* Bold text for 'India' */
+}
+
+
+
+
+
+
